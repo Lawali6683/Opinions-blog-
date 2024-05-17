@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Page</title>
+<style >
+    body {
+    font-family: Arial, sans-serif;
+    Background-image: url("lo.png")
+}
+
+.login-container, .forgot-password-container {
+    width: 250px;
+    padding: 27px;
+    border: 2px solid #2f22c9;
+    margin: 100px auto;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 9px;
+    margin: 10px 0;
+    border: 2px solid #2f22c9;
+}
+
+button {
+background: #4a5793;
+    padding: 10px 10px;
+    border-radius: 19px;
+    cursor: pointer;
+}
+
+</style>
+</head>
+<body>
+<div class="login-container">
+    <h2>Login</h2>
+    <form id="loginForm">
+        <input type="email" id="email" placeholder="Email Address" required>
+        <input type="password" id="password" placeholder="Password" required>
+        <button type="submit">Submit</button>
+    </form>
+    <button id="forgotPasswordBtn">Forgot Password?</button>
+</div>
+
+<div class="forgot-password-container hidden">
+    <h2>Forgot Password</h2>
+    <form id="forgotPasswordForm">
+        <input type="email" id="forgotEmail" placeholder="Email Address" required>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+<script>
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    // Add logic here to verify user
+    window.location.href = 'homepage.html';
+});
+
+document.getElementById('forgotPasswordBtn').addEventListener('click', function() {
+    document.querySelector('.login-container').classList.add('hidden');
+    document.querySelector('.forgot-password-container').classList.remove('hidden');
+});
+
+document.getElementById('forgotPasswordForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const email = document.getElementById('forgotEmail').value;
+    // Implement logic to handle password reset
+    alert('Check your email address for further instructions.');
+    window.location.href = 'homepage.html';
+});
+
+</script>
+
+</body>
+</html>

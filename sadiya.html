@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opinions Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+        background-image: url('gm.png');
+        
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+   background: linear-gradient(40deg, #f3ec78, #33064a, #c0508fbc, #80eaffbc, white, white, white);
+   border: 2px solid green;
+   
+   Color:#ac2eb9bc;
+   display: flexd;   
+    color: #fff;
+    padding: 20px;
+    Border :20px
+    Color: #11100b;
+    
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-toggle {
+Color: linear-gradient(450deg, #f3ec78, white);
+    display: none;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.share-icons {
+    display: flex;
+}
+
+.share-icon {
+    margin-left: 10px;
+}
+
+.share-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+   background-image: url('gm.png'); background-color:  #f5f5f5
+    border-radius: 20px;
+    text-shadow: 1px 1px 1px #6a7dd3;                        Font-size: 10px;
+}
+
+.opinion-menus {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.opinion-menus button {
+    margin: 0 10px;
+    padding: 10px 2px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        
+        
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        padding: 10px;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+}
+
+    </style>
+    <style>
+      
+
+      .haruna {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    Padding: 20px;
+}
+
+.haruna button {
+    margin: 0 10px;
+    padding: 10px 2px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        padding: 10px;
+    }
+
+    .menu li {
+        margin: 10px 0;
+        
+    }
+
+    .menu.show {
+        display: flex;
+    }
+}
+.menu-toggle{
+    
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+                
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Home page</a></li>
+                <li><a href="index.html">Log Out</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+            <div>
+                <i style="color: #86ff6a;">3M</i><i style="color: green;">TT</i> <p2 style="color: #4323d3;">Fellow</p2><p class="gup">
+                    Develop by Haruna Lawali 
+                </p>
+                <style>
+           .gup{
+    Font-size:1px;
+    Text-align:center;
+    Color:green;
+    text-shadow: 0px 0px 0px green;
+}        
+                </style>
+            </div>
+            <div class="share-icons">
+                <a href="#" class="share-icon"><img src="sh.png" alt="Share"></a>
+                             
+            </div>
+        </nav>
+    </header>
+    
+    
+<style>
+    bod {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+}
+
+.profile-container {
+    background-color: #ffffff;
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.profile-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+.profile-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+}
+
+h1, h2 {
+Font-size: 20px;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-left: 5px solid #007BFF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+strong {
+    color: #007BFF;
+}
+
+</style>
+</head>
+<body>
+<div class="profile-container">
+    <div class="profile-header">
+        <img src="ba.png" alt="Sadiya Abubakar" class="profile-photo">
+        <h1>Sadiya Abubakar</h1>
+    </div>
+    <div class="summary-container">
+        <h2>Initiatives</h2>
+        <ul>
+            <li><strong>
+               **Sadiya Abubakar's Call for Enhanced Security Measures in Zamfara Villages**:</strong> 
+              Sadiya Abubakar addresses the urgent need for enhanced security measures in Zamfara's vulnerable villages. She urges the state government to deploy additional security forces and establish rapid response units to prevent further attacks and displacement of villagers, promoting a more stable and secure environment.</li>
+            <li><strong>
+              **Proposal for Community Policing by Sadiya Abubakar**   :</strong> 
+             In her proposal to the Zamfara State government, Sadiya Abubakar outlines a detailed plan for implementing community policing strategies. She suggests the training and integration of local youths into a community policing framework that collaborates with state security services to improve surveillance and reduce incidents of violence and forced migration.</li>
+            <li><strong>
+               **Sadiya Abubakar Advocates for a Comprehensive Relief and Resettlement Program**:</strong>
+        Highlighting the dire conditions faced by displaced villagers, Sadiya Abubakar calls on the Zamfara State government to initiate comprehensive relief and resettlement programs. Her appeal includes the provision of temporary shelters, healthcare services, and educational facilities to assist displaced families until they can safely return to their homes.  </li>
+            <li><strong>
+              **Infrastructure Development Initiative by Sadiya Abubakar**:</strong> 
+       Sadiya Abubakar emphasizes the role of infrastructure development in mitigating insecurity. She advocates for the construction of better road networks and improved telecommunications, which she argues will facilitate quicker emergency responses and enhance security force mobility in rural areas plagued by insecurity.      </li>
+            <li><strong>
+             **Policy Reform and Victim Support Suggestion from Sadiya Abubakar**:</strong> 
+       Sadiya Abubakar addresses the need for policy reforms that focus specifically on the rights and protections of internally displaced persons in Zamfara. She urges the state government to create policies that support the victims of insecurity, including financial aid, counseling services, and education grants to ensure their rapid socio-economic recovery.
+
+<tr><p>Each of these summaries presents a strategic approach by Sadiya Abubakar aimed at addressing the issues of insecurity and displacement in Zamfara, offering tangible solutions to the state government for immediate consideration and action. </tr></p>    </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
+
+    
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+const menu = document.querySelector('.menu');
+
+menuToggle.addEventListener('click', () => {
+    menu.classList.toggle('show');
+});
+
+    </script>
+    <style>
+        
+      footer {
+         
+         background: linear-gradient(40deg, #f3ec78, #33064a, #c0508fbc, #80eaffbc, white, white, white);  
+           border: 2px solid green;
+            color: green;
+       text-color:#4CAF50;   
+            text-align: center;
+            padding: 6px;
+            position: fixed
+            bottom: 0;
+            width: 95%;
+                                  Font-size: 13px;
+           Pending:20px;
+        }
+    </style>
+    <section>
+        <body>
+    <footer>
+        <p>&copy; 2024. Develop by Haruna Lawali 3mtt Community Fellow.</p>
+    </footer></body></section>
+</body>
+</html>

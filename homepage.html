@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opinions Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+        background-image: url('kg.png');
+        
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+   background: linear-gradient(40deg, #f3ec78, #33064a, #c0508fbc, #80eaffbc, white, white, white);
+   border: 2px solid green;
+   
+   Color:#ac2eb9bc;
+   display: flexd;   
+    color: #fff;
+    padding: 20px;
+    Border :20px
+    Color: #11100b;
+    
+    
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-toggle {
+Color: linear-gradient(450deg, #f3ec78, white);
+    display: none;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.share-icons {
+    display: flex;
+}
+
+.share-icon {
+    margin-left: 10px;
+}
+
+.share-icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+   background-image: url('k.png'); background-color:  #f5f5f5;
+    border-radius: 20px;
+    text-shadow: 1px 1px 1px #6a7dd3;                        Font-size: 10px;
+}
+
+.opinion-menus {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.opinion-menus button {
+    margin: 0 10px;
+    padding: 10px 2px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        
+        
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        padding: 10px;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+}
+
+    </style>
+    <style>
+      
+
+      .haruna {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    Padding: 20px;
+}
+
+.haruna button {
+    margin: 0 10px;
+    padding: 10px 2px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        padding: 10px;
+    }
+
+    .menu li {
+        margin: 10px 0;
+        
+    }
+
+    .menu.show {
+        display: flex;
+    }
+}
+.menu-toggle{
+    
+}
+.gup{
+    Font-size:1px;
+    Text-align:center;
+    Color:green;
+    text-shadow: 0px 0px 0px green;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+                
+            </div>          
+            <ul class="menu">
+                <li><a href="index.html">Home page</a></li>
+                <li><a href="index.html">Log Out</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+            <div>
+                <i style="color: #86ff6a;">3M</i><i style="color: green;">TT</i> <p2 style="color: #4323d3;">Fellow</p2><p class="gup">
+                    Develop by Haruna Lawali 
+                </p>
+            </div>
+            <div class="share-icons">
+                <a href="#" class="share-icon"><img src="sh.png" alt="Share"></a>
+                             
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <p>Opinions are powerful forces that drive the development of communities worldwide. By sharing and reflecting on diverse viewpoints, we can discern which ideas hold the most value for us. This blog offers a platform where the voices of the global community are heard, discussing world wisdom, knowledge, and various global narratives, among other topics.</p>
+        </div>
+        <h3 style="color: blue;"><center>Opinion by some people menus</center></h3>
+        <div class="opinion-menus">
+            <button><a href="lawali.html" style="color: green;">Agricultural Opinions by Lawali Haruna</a></button>
+            <button><a href="haruna.html" style="color: green;">Peace opinion by Haruna Lawali</a></button>
+            </div>
+            <div class="haruna">
+            <button><a href="sadiya.html" style="color: green;"> Security Opinions by Sadiya Abubakar</button>
+            <button><a href="aisha.html" style="color: green;"> Vaccination Options by Aisha Lawali</a></button>
+        </div>
+    </main>
+    <script>
+       const menuToggle = document.querySelector('.menu-toggle');
+       const menuContainer = document.querySelector('.menu');
+
+       menuToggle.addEventListener('click', () => {
+           menuContainer.classList.toggle('show');
+       });
+   </script>
+    
+    
+    <style>
+        
+      footer {
+           background: linear-gradient(40deg, #f3ec78, #33064a, #c0508fbc, #80eaffbc, white, white, white);  
+           border: 2px solid green;
+            color: green;
+       text-color:#4CAF50;   
+            text-align: center;
+            padding: 6px;
+            position: fixed
+            bottom: 0;
+            width: 95%;
+                                  Font-size: 13px;
+           Pending:20px;
+        }
+    </style>
+    <section>
+        <img src="gb.png" style="width: 100%; height: 100%;" Style-type=" Develop by Haruna Lawali">
+    </section>
+    <section>
+    <footer>
+        <p>&copy; 2024. Develop by Haruna Lawali 3mtt Community Fellow.</p>
+    </footer></section>
+</body>
+</html>
